@@ -1,0 +1,53 @@
+// reset
+* {
+  font-family: $font-family-default;
+  color: $color-body;
+  line-height: $font-height;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border-style: solid;
+  border-color: #ededed;
+}
+
+small {
+  font-weight: $font-weight-heavy;
+}
+
+sup {
+  color: $color-blue-default;
+  font-size: 1rem;
+  margin: 2px;
+  letter-spacing: 0em;
+  opacity: .5;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  li {
+    a {
+      color: $color-blue-dark;
+      font-weight: $font-weight-heavy;
+      &:hover {
+        color: $color-blue-dark;
+      }
+    }
+  }
+}

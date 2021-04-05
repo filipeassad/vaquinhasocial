@@ -1,0 +1,39 @@
+// typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-blue-default;
+  font-weight: $font-weight-heavy;
+  line-height: 1em;
+  &.white {
+    text-shadow: 1px 2px 15px rgba(0,0,0,.2);
+  }
+}
+h1,
+h2,
+h3 {
+  letter-spacing: -0.04em;
+}
+h1 {
+  font-size: 3.5rem;
+  color: $color-blue-dark;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+.font-light {
+  font-weight: $font-weight-light;
+}
+.font-regular {
+  font-weight: $font-weight-default;
+}
+.font-heavy {
+  font-weight: $font-weight-heavy;
+}

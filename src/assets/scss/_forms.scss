@@ -1,0 +1,122 @@
+// forms
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Maven Pro", sans-serif;
+
+  label {
+    color: $color-blue-dark;
+    font-weight: $font-weight-default;
+    a {
+      font-weight: $font-weight-heavy;
+    }
+  }
+
+  h3,
+  h4 {
+    margin: 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  textarea,
+  select {
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 15px;
+    background-color: white;
+    margin: 10px 0 20px;
+    &:focus {
+      outline: 0;
+      background-color: $color-blue-lighten;
+      & + label {
+        opacity: 0;
+      }
+    }
+  }
+  input[type="checkbox"] {
+    float: left;
+    width: auto;
+    margin: 5px 5px 5px 0;
+  }
+
+  .requirements-js {
+    float: right;
+    padding: 2px 10px;
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: 0.725rem;
+    display: none;
+    margin-top: -18px;
+    margin-right: 5px;
+  }
+
+  .requirements {
+    padding: 0 30px 0 50px;
+    max-height: 0;
+    transition: 0.28s;
+    overflow: hidden;
+    color: red;
+    font-weight: $font-weight-heavy;
+  }
+
+  input {
+    outline: none;
+    transition: 0.5s ease-in-out;
+    display: block;
+    width: 100%;
+    &.large {
+      font-size: 40px;
+      padding: 20px 30px;
+    }
+    &.submit {
+      cursor: pointer;
+      margin-top: 20px;
+      background: $color-blue-default;
+      border: 1px solid $color-blue-default;
+      border-radius: 4px;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      &:hover {
+        background: white;
+        border: 1px solid $color-blue-default;
+        color: $color-blue-default;
+      }
+    }
+  }
+}
+
+// ifs
+.topbar {
+  form {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    input[type="submit"],
+    select {
+      float: left;
+      width: auto;
+      margin: 10px 0;
+    }
+    input[type="text"] {
+      margin-right: 10px;
+    }
+  }
+}
+.swiper-slide {
+  form {
+    h4 {
+      margin: 0;
+    }
+  }
+}
